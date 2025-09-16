@@ -1,0 +1,244 @@
+
+
+/**************Medium Layout****************/
+
+
+@media only screen and (max-width: 1280px){
+	
+.header .logo h1{
+    margin-left: 20px;
+}
+
+
+	@media only screen and (max-width: 1200px){
+	
+.header .logo h1{
+    margin-left: 0;
+}
+.header-right{
+    right: 100px;
+    margin-right: 0;
+}
+.sticky .header-right{
+    transform: translateX(80px);
+
+}
+
+.about .section-bg h1, .section-bg h1{
+    font-size: 8rem;
+}
+
+	}
+
+
+
+@media only screen and (max-width: 992px){
+
+.header .logo h1 {
+    font-size: 35px;
+}
+.hero-text{
+    font-size:4rem;
+    margin-top: -10px;
+}
+.hero-text span {
+    font-size: 4.2rem;
+}
+
+.about .section-bg h1, .section-bg h1{
+    font-size: 7rem;
+}
+
+
+.aboutt-title .section-title h1{
+    font-size: 3rem;
+}
+
+.about-image {
+    margin: 0rem 0 5rem 0;
+}
+
+.about .section-title-area {
+    height: 36vh;
+}
+.about-me .lead{
+	font-size: 1.1rem;
+}
+.service-title {
+    height: 15vh;
+}
+
+
+}
+
+
+/**************Tablets Layout****************/
+
+
+@media only screen and (max-width: 768px){
+
+.side-nav {
+    width: 45%;
+    right: -45%;
+}
+.site-wrapper.menu-open {
+    transform: translateX(-45%);
+}
+.header .logo h1 {
+    font-size: 30px;
+}
+
+
+.header-right {
+    right: 60px;
+    margin-right: 0;
+}
+.sticky .header-right {
+    transform: translateX(50px);
+}
+
+.header-right .menu .menu-btn {
+    display: inline-block; 
+    transform: translateX(50px);
+    transition: transform 1s cubic-bezier(0, 0, 0.18, 0.74);
+}
+.menu {
+    margin-right: 0px;
+    }
+
+.hero-text{
+    font-size:3.2rem;
+    margin-top: 30px;
+}
+.hero-text span {
+    font-size: 3.4rem;
+}
+
+.aboutt-title .section-title h1 {
+    font-size: 2.5rem;
+}
+.about .section-bg h1{
+    font-size: 6rem;
+}
+.section-bg h1{
+    font-size: 6.5rem;
+}
+.section-title h1 {
+    font-size: 3rem;
+}
+.single-service .card{
+	min-height:508px;
+}
+.work-nav {
+    top: 105%;
+}
+.subs-mail input {
+    width: 75%;
+}
+
+
+}
+
+
+/**************Mobile Layout****************/
+
+@media only screen and (max-width: 576px){
+.side-nav {
+    width: 100%;
+    right: -100%;
+}
+.site-wrapper.menu-open {
+    transform: translateX(-100%);
+}
+.container{
+	padding: 0 15px !important;
+}
+.header .logo h1 {
+    margin-left: 20px;
+    font-size: 6.5vw;
+}
+.sticky .header-right {
+    transform: translateX(5px);
+}
+.sticky .logo h1 {
+    transform: translateX(-300px);
+}
+
+.header-right {
+    right: 15px;
+}
+.hero-text{
+    font-size:8.5vw;
+}
+.hero-text span {
+    font-size: 9.5vw;
+}
+.aboutt-title .section-title h1 {
+    font-size: 6.8vw;
+}
+.section-bg h1, .about .section-bg h1{
+    font-size: 17vw;
+} 
+.section-title h1{
+	font-size: 9vw;
+}
+.single-service .card {
+    min-height: 0px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+.single-service {
+    margin-top: 2rem;
+}
+.subs-mail input {
+    width: 90%;
+}
+.skill-circle p{
+	font-size: 6vw;
+}
+
+.common-btn{
+	padding: 3px 30px;
+	font-size: 16px;
+}
+.work-nav i {
+    font-size: 25px;
+}
+
+
+
+}
+
+@media only screen and (max-width: 380px){
+	.common-btn{
+	padding: 3px 20px;
+	font-size: 14px;
+}
+.about .section-title-area {
+    height: 25vh;
+}
+.work-title,.service-title {
+    height: 10vh;
+}
+.work-title,.skill-title {
+    height: 14vh;
+}
+.hero-area {
+    height: 75vh;
+}
+.parallax-window {
+    height: 95vh;
+}
+.hero-text {
+    margin-top: -120px;
+}
+
+.hero-text-area .hero-text span.bnc{
+    padding:  0 2px;
+    margin-left:-2px; 
+}
+
+}
+
+
+/**************END****************/

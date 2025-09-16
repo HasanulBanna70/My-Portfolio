@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<title>Hasanul.</title>
+	
+	<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&family=Pacifico&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/animate.min.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/responsive.css">
+	<link rel="stylesheet" href="../css/SmoothScroll.css" />
+	<link href="../asstes/fontawesome/css/fontawesome.css" rel="stylesheet" />
+    <!-- <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet" /> -->
+    <link href="../asstes/fontawesome/css/solid.css" rel="stylesheet" />
+    <!-- <link href="/your-path-to-fontawesome/css/sharp-thin.css" rel="stylesheet" /> -->
+    <!-- <link href="/your-path-to-fontawesome/css/sharp-duotone-thin.css" rel="stylesheet" /> -->
+</head>
+
+
+
+
+
+<body class="darkmode">
+
+	
+<!------------------------- preloader ----------------------->
+<div class="loader">
+  <div class="loader-ring"></div>
+  <h1 class="text-center">Loading . . .</h1>
+</div>
+
+<div class="wholeContent">
+
+<!------------------------- Mouse Cursor ----------------------->
+
+<div id="ring"></div>
+
+<!-- 
+	<div class="side-nav d-flex justify-content-center align-items-center flex-column">
+		<div class="side-nav-bg"></div>
+		<ul class="nav-bar">
+			<li><a class="current" href="#home">Home</a></li>
+			<li><a href="#about">About Me</a></li>
+			<li><a href="#service">Services</a></li>
+			<li><a href="#work">Works</a></li>
+			<li><a href="#contact">Contact</a></li>
+			
+		</ul>
+		<div class="nav-btn">
+			<a target="_blank" href="https://forms.gle/Ny19oDzJAz3stey19"><button class="common-btn"><span>start a project</span></button></a>
+		</div>
+		<div class="social-icons text-center">
+			<ul>
+				<li><a target="_blank" href="https://www.facebook.com/hasanul.banna.001/"><i class="fab fa-facebook-f"></i></a></li>
+				<li><a target="_blank" href="https://twitter.com/Hasanul26062996"><i class="fab fa-twitter"></i></a></li>
+				<li><a target="_blank" href="https://www.instagram.com/hasanul_009/"><i class="fab fa-instagram"></i></a> </li>
+				<li><a target="_blank" href="https://www.linkedin.com/in/hasanul-banna-2156b61b9/"><i class="fab fa-linkedin-in"></i></a> </li>
+				<li><a target="_blank" href="https://join.skype.com/invite/YNy6M44f6PIb"><i class="fab fa-skype"></i></a></li>
+				
+				
+			</ul>
+		</div>
+	</div> -->
+
+			<div class="header">
+			<div class="container-fluid">
+				<div id="navbar" class="nav-bar">
+				<a  href="index.html"><span class="current">Home</span></a>
+				<a href="about_me.html"><span>About Me</span></a>
+
+				<div class="drop-down">
+					<a class="drop-button"><span>Projects <i class="fa-solid fa-chevron-down"></i></span></a>
+					<div class="drop-down-content"> 
+					<a href="#web"><span>IoT Projects</span></a>
+					<a href="#engineering"><span> Design Projects</span></a>
+					<a href="#consulting"><span>Others</span></a>
+					</div>
+				</div>
+
+				<a href="#work"><span>Gallery</span></a>
+				<a href="#contact-me"><span>Contact</span></a>
+
+				<label class="theme-toggle" for="darkModeToggle">
+					<input type="checkbox" id="darkModeToggle">
+					<div class="circle">
+						<svg class="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+							<path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
+						</svg>
+						<svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+							<path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 0 1-9.694 6.46c-5.799 0-10.5-4.7-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 0 1 .818.162Z" clip-rule="evenodd" />
+						</svg>
+					</div>
+				</label>
+
+
+				</div>
+					</div>
+				</div>
+
+                                         <!--         momentum scroll -->
+
+<div class="s-viewport">              
+ 	<div class="site-container">
+
+
+
+	<div class="hero-area" id="home">
+			<div class="parallax-window"  data-parallax="scroll"data-image-src="../images/hero_bg.jpg">
+				<div class="overlay"></div>
+				<div class="overlay-video">
+					<video src="../images/mountain-bg.mp4" muted autoplay loop type="mp4"></video>
+				</div>
+				
+
+				<div class="hero-text d-flex justify-content-center align-items-center">
+					<div class="container">
+						<h1 class="hero-text-box text-left">Hi, this is <br> <span class="text-1">Hasanul <span class="text-2"> Banna.</span></span> <br> 
+							I am an <br>
+							<span class="text-3">Electrical Engineer.</span><br></h1>
+
+							<h2 class="text-4">Building ideas where creativity meets code.
+Whether it’s web works or engineering projects, I love building things that look beautiful, work briliantly and inspire people.</h2>
+
+						<div class="hero-button text-left" >
+							<a target="_blank" href="https://forms.gle/Ny19oDzJAz3stey19">
+								<div data-tilt data-tilt-max="10" data-tilt-speed="100" data-tilt-perspective="1000" data-tilt-axis="x" easing ="ease-in-out(.03,.98,.52,.99)">
+									<button class="common-btn hero-btn" >Get in Touch<i class="fa-solid fa-arrow-right"></i></button>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+
+
+			</div>
+		</div>
+		
+		<!-- hero-area Close -->
+
+
+		<div class="about-section" id="about">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="about-image" data-tilt data-tilt-max="10" data-tilt-speed="5" data-tilt-perspective="2000" data-tilt-scale="1.02" data-tilt-axis="x">
+							<img class="border-img" src="../images/Transparent Profile.png" alt="">
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="about-me">
+							<div class="intro  d-flex justify-content-start">
+								<div class="my-name">
+								<h3>Hasanul Banna</h3>
+								<h5>Engineer | Developer | Designer</h5>
+								</div>
+								
+							</div>
+							
+							<p class="lead">
+								I am an Electrical & Electronic Engineering graduate from RUET (2025) with a passion for coding, design, and innovation. 
+								Since 2019, I’ve worked in front‑end development as a UI/UX expert and web developer, skilled in HTML5, CSS3, Bootstrap, JavaScript, PHP, and MySQL.
+								<br>
+								<br>
+								Alongside my academics, I’ve gained practical experience in power systems, power electronics and renewable energy.
+								I enjoy blending engineering, coding, and creativity to build solutions that truly make an impact and inspire people.
+							</p>
+							<div class="more-about-btn" >
+								<a href="about_me.html" target="_blank">
+									<div  data-tilt data-tilt-max="10" data-tilt-speed="100" data-tilt-perspective="1000" data-tilt-axis="x" easing ="ease-in-out(.03,.98,.52,.99)">
+										<button class="common-btn">More About Me<i class="fa-solid fa-arrow-right"></i>
+									</button>
+								</div>
+								</a>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!--------------------------------- End About-Section ------------------------------>
+
+			<!--------------------------------- Start Featured Projects-Section ------------------------------>
+
+
+
+		<div class="service-section" id="service">
+
+		
+						<div class="text-center service-section-title">
+								<h1>
+								<span>Things</span> I Can Do!
+								</h1>
+						</div>
+			
+
+		<div class="container">
+					<div class="row service-row">
+						<div class="col-lg-4 col-sm-6 single-service">
+							<div class="card ">
+							<div class="card-body">
+								<div class="card-icon icon-group">
+									<i class="fa-solid fa-code-compare"></i>
+								</div>
+								<div class="card-title">
+									AI/ML Projects
+								</div>
+								<div class="card-text">
+								<p class="text-justify">AI and machine learning solutions that turn complex data into actionable insights.
+								From predictive analytics to intelligent automation, they are built to solve real-world challenges.</p>
+								</div>
+							</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-sm-6 single-service">
+							<div class="card ">
+							<div class="card-body">
+								<div class="card-icon">
+								<i class="fas fa-laptop"></i><i class="fas fa-tablet"></i><i class="fas fa-mobile"></i>
+								</div>
+								<div class="card-title">
+									Web Design
+								</div>
+								<div class="card-text
+								">
+									<p>I develop websites that feel alive — fast, fluid, and responsive on every device. 
+										Each layout is crafted for intuitive navigation and an immense experience for the users.</p>
+								</div>
+							</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-sm-6 single-service">
+						<div class="card">
+							<div class="card-body">
+								<div class="card-icon">
+								<i class="fa-solid fa-network-wired"></i>
+								</div>
+								<div class="card-title">
+									IoT Projetcs
+								</div>
+
+								<div class="card-text"><p>
+									I create smart systems where devices talk, think, and work together. 
+									From connected sensors to automation, my IoT solutions bridge the digital and physical worlds.</p>
+								</div>
+							</div>
+						</div>
+						</div>
+						
+						</div>
+					</div>
+			</div>
+
+
+
+			
+		<div class="section-project" id="project">
+
+			
+						<div class="text-center section-project-title">
+								<h1>
+								Featured <span>Projects</span>
+								</h1>
+						</div>
+
+			<div class="container-fluid">		
+				<div class="row">
+					<div class="row project-n">
+						<div class="col-lg-4 m-auto">
+							<div class="image-container" data-tilt data-tilt-max="15" data-tilt-speed="50" data-tilt-perspective="1500" data-tilt-full-page-listening >
+								<img src="../images/Water quality.png" alt="">
+							</div>
+						</div>
+
+						<div class="col-lg-7 m-auto project-n-txt">
+							<h1>Automatic Water Level Controller and Water Quality Monitoring System using Arduino</h1>
+							<h2>
+								05 February, 2025
+							</h2>
+							<p>The Automatic Water Level Controller and Water Quality Monitoring System is designed based on the principles
+								 of embedded systems and sensor integration using Arduino. The system combines both automation and real-time monitoring... </p>
+							<div class="more-about-btn" >
+								<a href="#" target="_blank">
+									<div data-tilt data-tilt-max="15" data-tilt-speed="50" data-tilt-perspective="1500" data-tilt-axis="x" easing ="ease-in-out(.03,.98,.52,.99)">
+										<button class="common-btn" >See More<i class="fa-solid fa-arrow-right"></i></button> 
+									</div>
+								</a>
+							</div>
+						</div>
+						</div>
+						<div class="row project-n">
+						<div class="col-lg-7 m-auto project-n-txt">
+							<h1>Line Follower Robot with  Room Temperature and Humidity measurement using Arduino and DHT11 sensor</h1>
+							<h2>
+								10 August, 2024
+							</h2>
+							<p>The proposed project aims to develop a Line Follower Robot equipped with environmental sensing capabilities to measure room temperature and humidity using Arduino. 
+								The Line Follower Robot will navigate autonomously along a predefined path while detecting and following a contrasting line on the floor. </p>
+							<div class="more-about-btn" >
+								<a href="#" target="_blank">
+									<div  data-tilt data-tilt-max="15" data-tilt-speed="50" data-tilt-perspective="1500" data-tilt-axis="x" data-tilt-scale="1.05" easing ="ease-in-out(.03,.98,.52,.99)">
+										<button class="common-btn">See More<i class="fa-solid fa-arrow-right"></i></button>
+									</div>
+								</a>
+							</div>
+						</div>
+						
+						<div class="col-lg-4 m-auto">
+							<div class="image-container" data-tilt data-tilt-max="10" data-tilt-speed="10" data-tilt-perspective="1500" data-tilt-full-page-listening >
+								<img src="../images/Water quality.png" alt="">
+							</div>
+						</div>
+						</div>	
+						
+						<div class="row project-n">
+						<div class="col-lg-4 m-auto">
+							<div class="image-container" data-tilt data-tilt-max="10" data-tilt-speed="10" data-tilt-perspective="1500" data-tilt-full-page-listening >
+								<img src="../images/Machine_learning.png" alt="">
+							</div>
+						</div>
+
+						<div class="col-lg-7 m-auto project-n-txt">
+							<h1>Smart Image Classifier: Deep Learning with TensorFlow</h1>
+							<h2>
+								11 February, 2025
+							</h2>
+							<p>A deep learning project that classifies images into predefined categories using TensorFlow and Convolutional Neural Networks (CNNs).
+								The model is trained on labeled datasets to achieve high accuracy in real-world image recognition tasks.</p>
+							<div class="more-about-btn" >
+								<a href="#" target="_blank">
+									<div  data-tilt data-tilt-max="10" data-tilt-speed="100" data-tilt-perspective="1500" data-tilt-axis="x" data-tilt-scale="1.05" easing ="ease-in-out(.03,.98,.52,.99)">
+										<button class="common-btn">See More<i class="fa-solid fa-arrow-right"></i></button>
+									</div>
+								</a>
+							</div>
+						</div>
+						</div>
+
+
+				</div>
+
+
+
+					
+			</div>
+
+
+
+
+
+
+<div class="carousel">
+
+        <div class="list">
+
+            <div class="item" style="background-image: url(../images/portfolio_01.jpg);">
+				<div class="image-overlay"></div>
+                <div class="content">
+                    <div class="title">PSD to HTML</div>
+                    
+                    <div class="btn">
+                        <div data-tilt data-tilt-max="15" data-tilt-speed="50" data-tilt-perspective="1500" data-tilt-axis="x" data-tilt-scale="1.05" easing ="ease-in-out(.03,.98,.52,.99)">
+							 <button class="content-btn common-btn" > See More<i class="fa-solid fa-arrow-right"></i></button>
+						</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" style="background-image: url(../images/portfolio_02.jpg);">
+                
+                <div class="content">
+                    <div class="title">WEBSITE DESIGN</div>
+                   
+                    <div class="btn">
+                        <div data-tilt data-tilt-max="15" data-tilt-speed="50" data-tilt-perspective="1500" data-tilt-axis="x"  easing ="ease-in-out(.03,.98,.52,.99)">
+							<button class="content-btn common-btn" >See More<i class="fa-solid fa-arrow-right"></i></button> 
+						</div>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="item" style="background-image: url(../images/portfolio_03.jpg);">
+
+                <div class="content">
+                    <div class="title">LANDING PAGE</div>
+                    <div class="btn" data-tilt data-tilt-max="15" data-tilt-speed="50" data-tilt-perspective="1500" data-tilt-axis="x"  easing ="ease-in-out(.03,.98,.52,.99)">
+                        <button class="content-btn common-btn" >
+							 See More<i class="fa-solid fa-arrow-right"></i>
+						</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="item" style="background-image: url(../images/portfolio_04.jpg);">
+                
+                <div class="content">
+                    <div class="title">LANDING PAGE</div>
+                    <div class="btn"data-tilt data-tilt-max="15" data-tilt-speed="50" data-tilt-perspective="1500" data-tilt-axis="x" easing ="ease-in-out(.03,.98,.52,.99)">
+                        <button class="content-btn common-btn" >
+							 See More<i class="fa-solid fa-arrow-right"></i>
+						</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="item" style="background-image: url(../images/portfolio_05.jpg);">
+                
+                <div class="content">
+                    <div class="title">LANDING PAGE</div>
+                    <div class="btn" data-tilt data-tilt-max="15" data-tilt-speed="50" data-tilt-perspective="1500" data-tilt-axis="x" data-tilt-scale="1.05" easing ="ease-in-out(.03,.98,.52,.99)">
+                        <button class="content-btn common-btn" >
+							 See More<i class="fa-solid fa-arrow-right"></i>
+						</button>
+                    </div>
+                </div>
+
+            </div>
+
+        
+            
+
+      
+
+        </div>
+
+        <!--next prev button-->
+        <div class="arrows">
+            <button class="prev"><i class="fa-solid fa-chevron-left text-center"></i></button>
+            <button class="next"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+
+
+        <!-- time running -->
+        <div class="timeRunning"></div>
+
+    </div>
+
+
+
+
+
+
+
+<div class="blank_space">
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="section-skill">
+				<div class="section-skill-title text-center">
+						<h1>
+						My <span> SKILLS!</span>
+						</h1>
+				</div>
+
+
+
+		<div class="container">
+			<div class="skillWrapper">
+				<div class="row text-center">	
+					<div class="col-lg-3 col-md-4 col-6  skill-circle">
+						<div class="con chart-1" data-size="120" data-value="70" data-color="var(--circle-color)"> </div>
+						<p>Python	</p>
+					</div>
+					<div class="col-lg-3 col-md-4 col-6 skill-circle">
+						<div class="con chart-2" data-size="120" data-value="90" data-color="var(--circle-color)"> </div>
+						<p>HTML5	</p>
+					</div>
+					<div class="col-lg-3 col-md-4 col-6 skill-circle">
+						<div class="con chart-3" data-size="120" data-value="90" data-color="var(--circle-color)" > </div>	
+						<p>CSS3	</p>
+					</div>
+					<div class="col-lg-3 col-md-4 col-6 skill-circle">
+						<div class="con chart-4" data-size="120" data-value="60" data-color="var(--circle-color)" > </div>	
+						<p>JavaScript	</p>
+					</div>
+					<div class="col-lg-3 col-md-4 col-6 skill-circle ml-auto">
+						<div class="con chart-5" data-size="120" data-value="70" data-color="var(--circle-color)" > </div>	
+						<p>JQUERY	</p>
+					</div>
+					<div class="col-lg-3 col-md-4 col-6 skill-circle">
+						<div class="con chart-6" data-size="120" data-value="60" data-color="var(--circle-color)" ></div>	
+						<p>PHP	</p>
+					</div>
+
+					<div class="col-lg-3 col-md-4 col-6 skill-circle mx-auto ml-lg-0 mr-lg-auto">
+						<div class="con chart-7" data-size="100" data-value="70" data-color="var(--circle-color)"></div>
+						<p>MYSQL	</p>	
+					</div>
+				</div>
+			</div>
+
+	    </div>
+
+
+	</div>	
+
+
+	<div class="footer" id="contact-me">
+		<div class="overlay-footer"></div>
+		<div class="container">
+			<div class="row footer-row">
+				<div class="col-12 col-lg-8 mb-5 mb-lg-0 subscribe">
+					<div class="subs-mail"> 
+						<h3>NewsLetter</h3>
+						<form action="">
+						<input name="input" id="input" type="email" placeholder="Email Address" aria-required="true" aria-invalid="false">
+						</form>
+					</div>
+					<div class="sub-btn ">
+						<a target="_blank" href="https://forms.gle/Ny19oDzJAz3stey19">
+							<div data-tilt data-tilt-max="10" data-tilt-speed="100" data-tilt-perspective="1500" data-tilt-axis="x" data-tilt-scale="1.05" easing ="ease-in-out(.03,.98,.52,.99)"> 
+								<button type="submit" class="common-btn" ><span>Get In Touch</span><i class="fa-solid fa-arrow-right"></i></button>
+							</div>
+						</a>
+					</div>
+					
+				</div>
+				<div class="col-lg-4 col-12 contact-f">
+					<h3>Contact me</h3>
+					<a target="_blank" href="https://forms.gle/Ny19oDzJAz3stey19"><p>bannahasanul3@gmail.com</p></a>
+					<p>+880-1718-907257</p>
+					<p>+880-1858-638517</p>
+					<div class="social-icons-f">
+						<a target="_blank" href="https://www.facebook.com/hasanul.banna.001/"><i class="fab fa-facebook-f"></i></a>
+						<a target="_blank" href="https://twitter.com/Hasanul26062996"><i class="fab fa-twitter"></i></a>
+						<a target="_blank" href="https://www.linkedin.com/in/hasanul-banna-2156b61b9/"><i class="fab fa-linkedin-in"></i></a>
+						<a target="_blank" href="https://www.instagram.com/hasanul_009/"><i class="fab fa-instagram"></i></a>
+						<a target="_blank" href="https://join.skype.com/invite/YNy6M44f6PIb"><i class="fab fa-skype"></i></a>
+					</div>
+				</div>
+				<div class="col-lg-8 col-6 service-f ">
+					<h3>Services</h3>
+					<ul>
+						<li><a href="#">Web Design</a></li>
+						<li><a href="#">Development</a></li>
+						<li><a href="#">Wordpress</a></li>
+						<li><a href="#">E-commerce</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-4 col-6 address-f">
+					<h3>Address</h3>
+					<p>Mirpur,Dhaka,</p>
+					<p>Bangladesh</p>
+				</div>
+
+				<div class="col-12 f-copyright">
+					<h2>hasan <span> ul.</span></h2>
+					<p> 
+						Copyright ©  2020 
+							Hasanul.Ltd <span>.</span> Web Designer <span>.</span> privacy policy <span>.</span>
+					</p>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+
+
+
+
+				</div>
+			</div>
+
+</div>
+
+
+<script>
+let darkmode = localStorage.getItem('darkmode')
+const themeSwitch = document.getElementById('darkModeToggle')
+
+const enableDarkmode = () => {
+  document.body.classList.add('darkmode')
+  themeSwitch.checked = true
+  localStorage.setItem('darkmode', 'active')
+}
+
+const disableDarkmode = () => {
+  document.body.classList.remove('darkmode')
+  themeSwitch.checked = false
+  localStorage.setItem('darkmode', null)
+}
+
+// On page load, restore theme
+if (darkmode === "active") {
+  enableDarkmode()
+} else {
+  disableDarkmode()
+}
+
+// Use "change" instead of "click"
+themeSwitch.addEventListener("change", () => {
+  themeSwitch.checked ? enableDarkmode() : disableDarkmode()
+})
+</script>
+
+
+	<script src="https://kit.fontawesome.com/e0e67fed7a.js" crossorigin="anonymous"></script>
+	<script src="../js/jquery-3.5.1.min.js"></script>
+	<!-- <script src="js/script.js"></script> -->
+	<script src="../js/popper.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/parallax.js"></script>
+	<!-- <script type="text/javascript" src="../js/jquery.singlePageNav.min.js"></script> -->
+    <script type="text/javascript" src="../js/progress-bar.js"></script>
+    <script defer src="https://kit.fontawesome.com/e0e67fed7a.js" crossorigin="anonymous"></script>
+	<script src="../js/SmoothScroll.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+	<script type="text/javascript" src="../js/tilt.js"></script>
+	<script src="../js/app.js"></script>	
+
+	<script>
+/* ---------- helpers ---------- */
+const isTouchDevice = 'ontouchstart' in document.documentElement;
+
+function resizeBodyHeight() {
+  const vp = document.querySelector('.s-viewport');
+  if (vp) document.body.style.height = vp.scrollHeight + 'px';
+}
+
+/* Initialize SmoothScroll AFTER content is visible and sizes are correct */
+function initSmoothScrolling() {
+  try {
+    const vp = document.querySelector('.s-viewport');
+    const container = document.querySelector('.site-container');
+    if (!vp || !container) {
+      console.warn("SmoothScroll: .s-viewport or .site-container not found");
+      return;
+    }
+    vp.classList.add('SmoothScroll');
+    // new SmoothScroll(...) from your SmoothScroll.min.js
+    new SmoothScroll({
+      target: container,
+      scrollEase: 0.08,
+      maxOffset: 500,
+    });
+  } catch (e) {
+    console.warn('SmoothScroll init failed:', e);
+  }
+  resizeBodyHeight();
+  document.body.style.overflow = '';
+}
+
+function onAllReady() {
+  setTimeout(() => {
+    initSmoothScrolling();
+    resizeBodyHeight();
+    console.log('onAllReady: smooth scroll should be initialized');
+  }, 60);
+}
+
+/* ---------- Preloader ---------- */
+function loaderSpinner() {
+  const loader = document.querySelector(".loader");
+  const content = document.querySelector(".wholeContent");
+
+  let loadStart = performance.now();
+
+  // Prevent scroll while loading
+  document.body.style.overflow = "hidden";
+
+  window.addEventListener("load", () => {
+    let loadTime = performance.now() - loadStart;
+
+    if (loadTime <= 500) {
+      // Skip loader entirely
+      loader.style.display = "none";
+      content.style.display = "block";
+      document.body.style.overflow = "";
+      initSmoothScroll();
+      return;
+    }
+
+    // Loader shows for at least 1.2s
+    setTimeout(() => {
+      loader.style.transition = "all 0.6s ease";
+      loader.style.transform = "scale(1.5)";
+      loader.style.opacity = "0";
+      setTimeout(() => {
+        loader.style.display = "none";
+        content.style.display = "block";
+        document.body.style.overflow = "";
+        initSmoothScroll();
+      }, 600);
+    }, 1200);
+  });
+}
+
+function initSmoothScroll() {
+  if ("ontouchstart" in document.documentElement) return;
+  document.querySelector(".s-viewport")?.classList.add("SmoothScroll");
+  new SmoothScroll({
+    target: document.querySelector(".site-container"),
+    scrollEase: 0.07,
+    maxOffset: 400,
+  });
+}
+
+loaderSpinner();
+
+/* Keep body height right on resize */
+window.addEventListener('resize', resizeBodyHeight);
+</script>
+
+
+
+
+    <!-- <script type="text/javascript">
+    	let progress = document.getElementById('custom-bar');
+    	let totalHeight= document.body.scrollHeight - window.innerHeight;
+    	window.onscroll =function(){
+    		let progressHeight = (window.pageYOffset / totalHeight) * 100;
+    		progress.style.height = progressHeight + "%";
+    	}
+    </script>
+ -->
+
+
+<!-- 
+	<script>
+
+            // Prevent console.log from generating errors in IE for the purposes of the demo
+            if ( ! window.console ) console = { log: function(){} };
+
+            // The actual plugin
+            $('.nav-bar').singlePageNav({
+                offset: $('.nav-bar').outerHeight(),
+                filter: ':not(.external)',
+                updateHash: true,
+                beforeStart: function() {
+                    console.log('begin scrolling');
+                },
+                onComplete: function() {
+                    console.log('done scrolling');
+                }
+            });
+    </script>  -->
+
+ <script>
+const ring = document.getElementById("ring");
+let mouseX = 0, mouseY = 0;
+let ringX = 0, ringY = 0;
+let speed =0.08;
+let lastX = 0, lastY = 0;
+
+document.addEventListener("mousemove", (e) => {
+  const xOffset = 07; // pixels
+  const yOffset = 10;
+  mouseX = e.clientX + xOffset;
+  mouseY = e.clientY - yOffset;
+});
+
+function animate() {
+  let dx = mouseX - ringX;
+  let dy = mouseY - ringY;
+
+  ringX += dx * speed;
+  ringY += dy * speed;
+
+  let stretchX = 1 + Math.min(Math.abs(dx) / 150, 0.5);
+  let stretchY = 1 + Math.min(Math.abs(dy) / 150, 0.5);
+
+  // Normalize stretching so it stretches in direction of movement
+  if (Math.abs(dx) > Math.abs(dy)) {
+    stretchY = 1 - Math.min(Math.abs(dx) / 300, 0.2);
+  } else {
+    stretchX = 1 - Math.min(Math.abs(dy) / 300, 0.2);
+  }
+
+  ring.style.transform = `translate(${ringX - 25}px, ${ringY - 25}px) scale(${stretchX}, ${stretchY})`;
+
+  lastX = ringX;
+  lastY = ringY;
+
+  requestAnimationFrame(animate);
+}
+animate();
+</script>
+
+
+
+
+
+
+<script>
+    // Change navbar background on scroll
+    window.addEventListener("scroll", function() {
+      const navbar = document.getElementById("navbar");
+      if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    });
+  </script>  
+
+
+
+
+<script>
+const container = document.querySelector('.image-container');
+
+container.addEventListener('mousemove', (e) => {
+  const rect = container.getBoundingClientRect();
+  const x = e.clientX - rect.left;  // Mouse X inside container
+  const y = e.clientY - rect.top;   // Mouse Y inside container
+
+  const rotateX = ((y / rect.height) - 0.5) * 20; // tilt up/down
+  const rotateY = ((x / rect.width) - 0.5) * -20; // tilt left/right
+
+  container.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+});
+
+container.addEventListener('mouseleave', () => {
+  container.style.transform = 'rotateX(0deg) rotateY(0deg)';
+});
+</script>
+
+
+</body>
+</html>
