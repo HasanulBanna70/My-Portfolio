@@ -369,7 +369,7 @@ a,a:hover{
 
     /* Navbar base style */
     .nav-bar {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -380,7 +380,9 @@ a,a:hover{
     padding: 0 50px;
     /* background: rgba(11, 11, 11, 0.6); */
     /* backdrop-filter: blur(8px); */
-    transition: all 0.4s ease;  /* smooth transition */
+    transition: background 0.4s ease,
+                transform 0.4s ease,
+                box-shadow 0.4s ease;
     z-index: 99;
     transform: translateY(0);   /* default position */
     gap: 30px;
@@ -415,7 +417,7 @@ a,a:hover{
     }
 
 
-       .nav-bar label {
+       .nav-bar .theme-toggle {
       color: #fff;
       text-decoration: none;
       font-size: 1.2rem;
@@ -433,6 +435,7 @@ a,a:hover{
 
     .nav-bar a:hover span{
       color: #00e9ff ; 
+      transform-origin: center;
       transform: scale(1.15);
       transition: all 0.2s ease;
     }
@@ -448,6 +451,55 @@ a,a:hover{
       transition: all 0.5s ease;
     }
 
+
+
+/* hamburger menu */
+
+
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+
+.hamburger {
+  display: none;
+  width: 36px;
+  height: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 1001;
+}
+
+.hamburger span {
+  position: absolute;
+  left: 0;
+  width: 70%;
+  height: 4px;
+  background: var(--text-color);
+  border-radius: 3px;
+  transition: transform 0.4s ease, opacity 0.3s ease;
+}
+
+.hamburger span:nth-child(1) { top: 0; }
+.hamburger span:nth-child(2) { top: 12px; }
+.hamburger span:nth-child(3) { bottom: 0; }
+
+
+.hamburger.active span:nth-child(1) {
+  transform: translateY(12px) rotate(45deg);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-12px) rotate(-45deg);
+}
+/* Hamburger base style */
 
 
 
@@ -512,7 +564,7 @@ a,a:hover{
     }
    
     .drop-down:hover .drop-button i{
-      rotate: 180deg;
+      transform: rotate(180deg);
       transition: all 0.5s ease;
     }
 
@@ -536,7 +588,7 @@ a,a:hover{
 
 
     /* Show dropdown on hover */
-    .drop-down:hover .drop-down-content {
+    .drop-down:focus-within .drop-down-content {
       display: block;
       animation: fadeIn 0.3s ease;
     }
