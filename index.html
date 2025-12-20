@@ -36,52 +36,41 @@
 
 <!------------------------- Mouse Cursor ----------------------->
 
-<!-------------<div id="ring"></div>------------------>
+<div id="ring"></div>
 
-<!-- 
-	<div class="side-nav d-flex justify-content-center align-items-center flex-column">
-		<div class="side-nav-bg"></div>
-		<ul class="nav-bar">
-			<li><a class="current" href="#home">Home</a></li>
-			<li><a href="#about">About Me</a></li>
-			<li><a href="#service">Services</a></li>
-			<li><a href="#work">Works</a></li>
-			<li><a href="#contact">Contact</a></li>
-			
-		</ul>
-		<div class="nav-btn">
-			<a target="_blank" href="https://forms.gle/Ny19oDzJAz3stey19"><button class="common-btn"><span>start a project</span></button></a>
-		</div>
-		<div class="social-icons text-center">
-			<ul>
-				<li><a target="_blank" href="https://www.facebook.com/hasanul.banna.001/"><i class="fab fa-facebook-f"></i></a></li>
-				<li><a target="_blank" href="https://twitter.com/Hasanul26062996"><i class="fab fa-twitter"></i></a></li>
-				<li><a target="_blank" href="https://www.instagram.com/hasanul_009/"><i class="fab fa-instagram"></i></a> </li>
-				<li><a target="_blank" href="https://www.linkedin.com/in/hasanul-banna-2156b61b9/"><i class="fab fa-linkedin-in"></i></a> </li>
-				<li><a target="_blank" href="https://join.skype.com/invite/YNy6M44f6PIb"><i class="fab fa-skype"></i></a></li>
+
+
+	<div class="header">
+		<div class="container-fluid">
+			<div id="navbar" class="nav-bar">
 				
-				
-			</ul>
-		</div>
-	</div> -->
+					<button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+					<span></span>
+					<span></span>
+					<span></span>
+					</button>
 
-			<div class="header">
-			<div class="container-fluid">
-				<div id="navbar" class="nav-bar">
-				<a  href="index.html"><span class="current">Home</span></a>
-				<a href="about_me.html"><span>About Me</span></a>
 
-				<div class="drop-down">
-					<a class="drop-button"><span>Projects <i class="fa-solid fa-chevron-down"></i></span></a>
-					<div class="drop-down-content"> 
-					<a href="#web"><span>IoT Projects</span></a>
-					<a href="#engineering"><span> Design Projects</span></a>
-					<a href="#consulting"><span>Others</span></a>
-					</div>
-				</div>
+				<div class="nav-links" id="navLinks">
+  <!-- KEEP ALL YOUR EXISTING LINKS HERE -->
+  <a href="index.html"><span class="current">Home</span></a>
+  <a href="about_me.html"><span>About Me</span></a>
 
-				<a href="#work"><span>Gallery</span></a>
-				<a href="#contact-me"><span>Contact</span></a>
+  <div class="drop-down">
+    <button class="drop-button">
+      <span>Projects <i class="fa-solid fa-chevron-down"></i></span>
+    </button>
+    <div class="drop-down-content">
+      <a href="#web"><span>IoT Projects</span></a>
+      <a href="#engineering"><span>Design Projects</span></a>
+      <a href="#consulting"><span>Others</span></a>
+    </div>
+  </div>
+
+  <a href="#work"><span>Gallery</span></a>
+  <a href="#contact-me"><span>Contact</span></a>
+</div>
+
 
 				<label class="theme-toggle" for="darkModeToggle">
 					<input type="checkbox" id="darkModeToggle">
@@ -96,9 +85,9 @@
 				</label>
 
 
-				</div>
-					</div>
-				</div>
+			</div>
+		</div>
+	</div>
 
                                          <!--         momentum scroll -->
 
@@ -848,6 +837,42 @@ container.addEventListener('mouseleave', () => {
   container.style.transform = 'rotateX(0deg) rotateY(0deg)';
 });
 </script>
+
+
+
+
+
+
+
+
+
+
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("navLinks");
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navLinks.classList.toggle("open");
+    hamburger.setAttribute(
+      "aria-expanded",
+      hamburger.classList.contains("active")
+    );
+  });
+
+  // Close menu when any link is clicked
+  navLinks.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      hamburger.classList.remove("active");
+      navLinks.classList.remove("open");
+      hamburger.setAttribute("aria-expanded", "false");
+    });
+  });
+</script>
+
+
+
+
 
 
 </body>
