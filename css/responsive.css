@@ -114,10 +114,18 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease;
-    border-bottom: 1px solid var(--ring-color);
+    border-bottom: 1px solid white;
     z-index: 999;
   }
 
+  .fluid-override{
+    padding: 0;
+  }
+
+
+  .nav-bar.scrolled {
+    border-bottom: 1px solid white;
+  }
   .nav-links.open {
     max-height: 500px;
   }
@@ -140,7 +148,7 @@
     .overlay,
     .overlay-video video,
     .hero-text {
-      height: 72vh;
+      height: 55vh;
       min-height: 520px;
     }
 
