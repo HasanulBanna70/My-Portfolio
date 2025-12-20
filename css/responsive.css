@@ -92,131 +92,183 @@
   }
 }
 
-/* ---------- Mobile devices (≤768px) ---------- */
-@media (max-width: 768px) {
+  /* ---------- Mobile devices (≤768px) ---------- */
+  @media (max-width: 768px) {
 
-
-    
-  .hero-area,
-  .parallax-window,
-  .overlay,
-  .overlay-video video,
-  .hero-text {
-    height: 72vh;
-    min-height: 520px;
+  .hamburger {
+    display: block;
   }
 
-  .hero-text {
-    display: flex;
-    align-items: center;
-    padding-top: 80px; /* space for navbar */
-  }
-
-  .hero-text-box {
-    text-align: left;
-  }
-
-  .text-4 {
-    width: 90%;
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-
-  .hero-button {
-    margin-top: 20px;
-  }
-
-
-  /* Navbar stacking */
   .nav-bar {
-    height: auto;
-    flex-wrap: wrap;
-    padding: 10px;
+    justify-content: space-between;
   }
 
-  .nav-bar a {
-    padding: 10px;
+  /* ONLY mobile gets absolute menu */
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background: var(--base-variant);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    border-bottom: 1px solid var(--ring-color);
+    z-index: 999;
   }
 
-  
-  .hero-text-box .text-1,
-  .hero-text-box .text-2,
-  .hero-text-box .text-3 {
-    font-size: clamp(2rem, 8vw, 3rem);
+  .nav-links.open {
+    max-height: 500px;
   }
 
-  
-
-  /* Buttons */
-  .common-btn {
-    font-size: 16px;
-    padding: 8px 20px;
-  }
-
-  /* Service cards */
-  .single-service .card {
-    transform: none;
-  }
-
-  /* Projects */
-  .image-container img {
-    transform: none;
-  }
-
-  /* Skills */
-  .skill-circle p {
-    font-size: 1.2rem;
-  }
-
-  /* Footer */
-  .footer {
+  .nav-links a,
+  .nav-links .drop-down {
+    width: 100%;
     text-align: center;
   }
 
-  .subs-mail input {
-    width: 100%;
-  }
-}
-
-/* ---------- Small phones (≤576px) ---------- */
-@media (max-width: 576px) {
-
-  /* Hero text tighter */
-  .hero-text-box {
-    letter-spacing: 1px;
-  }
-
-  .text-4 {
-    font-size: 0.95rem;
-    line-height: 1.4;
-  }
-
-  /* Section titles */
-  .service-section-title h1,
-  .section-project-title h1,
-  .section-skill-title h1 {
-    font-size: 2.5rem;
-  }
-
-  /* About image */
-  .about-image img {
-    max-width: 70vw;
-  }
-
-  /* Carousel disabled complexity */
-  .carousel {
-    height: 50vh;
-  }
-
-  .carousel .list .item {
+  /* Prevent desktop hover dropdown logic from breaking */
+  .drop-down-content {
+    position: static;
     box-shadow: none;
   }
 
-  /* Footer spacing */
-  .footer-row {
-    row-gap: 2rem;
+      
+    .hero-area,
+    .parallax-window,
+    .overlay,
+    .overlay-video video,
+    .hero-text {
+      height: 72vh;
+      min-height: 520px;
+    }
+
+    .hero-text {
+      display: flex;
+      align-items: center;
+      padding-top: 80px; /* space for navbar */
+    }
+
+    .hero-text-box {
+      text-align: left;
+    }
+
+    .text-4 {
+      width: 100%;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    .hero-button {
+      margin-top: 20px;
+    }
+
+
+    /* Navbar stacking */
+    .nav-bar {
+      height: auto;
+      flex-wrap: wrap;
+      padding: 10px;
+    }
+
+    .nav-bar a {
+      padding: 10px;
+    }
+
+    
+    .hero-text-box .text-1,
+    .hero-text-box .text-2,
+    .hero-text-box .text-3 {
+      font-size: clamp(2rem, 8vw, 3rem);
+    }
+
+
+    /* Buttons */
+    .common-btn {
+      font-size: 16px;
+      padding: 8px 20px;
+    }
+
+    /* Service cards */
+    .single-service .card {
+      transform: none;
+    }
+
+    /* Projects */
+    .image-container img {
+      transform: none;
+    }
+
+    /* Skills */
+    .skill-circle p {
+      font-size: 1.2rem;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+    }
+
+    .subs-mail input {
+      width: 100%;
+    }
   }
+
+  /* ---------- Small phones (≤576px) ---------- */
+  @media (max-width: 576px) {
+
+    /* Hero text tighter */
+    .hero-text-box {
+      letter-spacing: 1px;
+      margin: 0 20px 0 20px;
+    }
+
+        .hero-button {
+        margin-left: 20px;
+    }
 }
+
+    
+
+    .text-4 {
+      font-size: 0.95rem;
+      line-height: 1.4;
+      margin-left: 20px;
+    }
+
+
+
+    .lead {
+        margin: 0px 40px 0px 0px;
+    } 
+
+    /* Section titles */
+    .service-section-title h1,
+    .section-project-title h1,
+    .section-skill-title h1 {
+      font-size: 2.5rem;
+    }
+
+    /* About image */
+    .about-image img {
+      max-width: 70vw;
+    }
+
+    /* Carousel disabled complexity */
+    .carousel {
+      height: 50vh;
+    }
+
+    .carousel .list .item {
+      box-shadow: none;
+    }
+
+    /* Footer spacing */
+    .footer-row {
+      row-gap: 2rem;
+    }
+  }
 
 /* ---------- Ultra small devices (≤400px) ---------- */
 @media (max-width: 400px) {
