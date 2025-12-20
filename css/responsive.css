@@ -95,6 +95,38 @@
 /* ---------- Mobile devices (≤768px) ---------- */
 @media (max-width: 768px) {
 
+
+    
+  .hero-area,
+  .parallax-window,
+  .overlay,
+  .overlay-video video,
+  .hero-text {
+    height: 72vh;
+    min-height: 520px;
+  }
+
+  .hero-text {
+    display: flex;
+    align-items: center;
+    padding-top: 80px; /* space for navbar */
+  }
+
+  .hero-text-box {
+    text-align: left;
+  }
+
+  .text-4 {
+    width: 90%;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .hero-button {
+    margin-top: 20px;
+  }
+
+
   /* Navbar stacking */
   .nav-bar {
     height: auto;
@@ -106,24 +138,14 @@
     padding: 10px;
   }
 
-  /* Hero */
-  .hero-area,
-  .overlay,
-  .overlay-video video,
-  .hero-text {
-    height: 100vh;
-  }
-
+  
   .hero-text-box .text-1,
   .hero-text-box .text-2,
   .hero-text-box .text-3 {
     font-size: clamp(2rem, 8vw, 3rem);
   }
 
-  .text-4 {
-    width: 95%;
-    font-size: 1rem;
-  }
+  
 
   /* Buttons */
   .common-btn {
