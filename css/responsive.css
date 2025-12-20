@@ -33,10 +33,16 @@
     gap: 15px;
   }
 
+  button {
+    padding: 0.5rem 0; 
+  }
   .nav-bar a span {
     font-size: 1rem;
   }
 
+    .drop-button {
+      font-size: 1rem;
+    }
   /* Hero section */
   .hero-text {
     text-align: center;
@@ -48,7 +54,6 @@
 
   .text-4 {
     width: 80%;
-    margin: 0 auto;
     text-align: left;
   }
 
@@ -64,12 +69,11 @@
 
   .about-image img {
     max-width: 45vw;
-    margin: 0 auto;
   }
 
   .about-me {
     margin-left: 0;
-    text-align: center;
+    text-align: left;
   }
 
   .lead {
@@ -78,7 +82,7 @@
 
   /* Project section */
   .project-n {
-    text-align: center;
+    text-align: left;
   }
 
   .project-n-txt h1 {
@@ -93,7 +97,7 @@
 }
 
   /* ---------- Mobile devices (≤768px) ---------- */
-  @media (max-width: 768px) {
+  @media (max-width: 786px) {
 
   .hamburger {
     display: block;
@@ -102,6 +106,8 @@
   .nav-bar {
     justify-content: space-between;
   }
+
+
 
   /* ONLY mobile gets absolute menu */
   .nav-links {
@@ -235,7 +241,6 @@
         .hero-button {
         margin-left: 20px;
     }
-}
 
     
 
@@ -260,7 +265,7 @@
 
     /* About image */
     .about-image img {
-      max-width: 70vw;
+      max-width: 40vw;
     }
 
     /* Carousel disabled complexity */
