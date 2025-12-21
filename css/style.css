@@ -78,6 +78,10 @@ body {
     width: 100% !important;
 }
 
+.fluid-override{
+        padding: 0;
+    }
+
 button{
   border: none;
   padding: .8em 2em;
