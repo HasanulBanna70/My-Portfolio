@@ -405,7 +405,7 @@ a,a:hover{
     }
 
       .nav-bar.scrolled a{
-        color: var(--text-color);
+        color: var(--text-color) !important;
     }
 
 
@@ -427,7 +427,7 @@ a,a:hover{
 
 
     .nav-bar a {
-      color: #fff;
+      color: #fff !important;
       text-decoration: none;
       font-size: 1.2rem;
       font-weight: 600;
