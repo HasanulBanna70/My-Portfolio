@@ -93,6 +93,7 @@ button{
   font-weight: 500;
   cursor: pointer;
 }
+
 /* Hide checkbox */
 #darkModeToggle {
   display: none;
@@ -720,6 +721,7 @@ a,a:hover{
     letter-spacing: -3px;
     position: relative;
     background-image: linear-gradient(to right ,rgb(206, 155, 155),rgb(139, 194, 131),rgb(109, 206, 206),rgb(191, 164, 216),rgb(133, 155, 198));
+    background-clip: text;
     -webkit-background-clip: text;
     animation: bg-animation 30s linear infinite;
     background-size: 1000%
@@ -807,6 +809,9 @@ a,a:hover{
     border-radius: 40px;
     padding: 3.5px;
     background: linear-gradient(90deg, #bae03a, #87cd24);
+    mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
     -webkit-mask: 
         linear-gradient(#fff 0 0) content-box, 
         linear-gradient(#fff 0 0);
@@ -1987,3 +1992,6 @@ font-size: 2rem;
     0% { transform: translate(-50%, -50%) scale(1); }
     50% { transform: translate(-50%, -52%) scale(1.05); }
     100% { transform: translate(-50%, -50%) scale(1); }
+
+
+ }
